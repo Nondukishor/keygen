@@ -1,0 +1,29 @@
+{
+  "name": "keygenerator",
+  "version": "1.1.0",
+  "main": "./dist/index.js",
+  "scripts": {
+    "start": "ts-node-dev --respawn index.ts",
+    "build": "tsc",
+    "preserve": "yarn tsc",
+    "serve": "node dist/index.js"
+  },
+  "author": "Nipu Chakraborty",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^14.0.23",
+    "ts-node-dev": "^1.0.0-pre.52",
+    "typescript": "^3.9.7"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nondukishor/keygen.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/Nondukishor/keygen/issues"
+  },
+  "homepage": "https://github.com/Nondukishor/keygen#readme",
+  "description": ""
+}
