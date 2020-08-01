@@ -14,22 +14,22 @@ Platform:
   linux x64
 
 Trace: 
-  Error: https://npm.pkg.github.com/-/user/org.couchdb.user:pronipu: Error authenticating user: Bad credentials
-      at Request.params.callback [as _callback] (/usr/share/yarn/lib/cli.js:66987:18)
-      at Request.self.callback (/usr/share/yarn/lib/cli.js:140748:22)
-      at Request.emit (events.js:198:13)
-      at Request.<anonymous> (/usr/share/yarn/lib/cli.js:141720:10)
-      at Request.emit (events.js:198:13)
-      at IncomingMessage.<anonymous> (/usr/share/yarn/lib/cli.js:141642:12)
-      at Object.onceWrapper (events.js:286:20)
-      at IncomingMessage.emit (events.js:203:15)
-      at endReadableNT (_stream_readable.js:1145:12)
-      at process._tickCallback (internal/process/next_tick.js:63:19)
+  Error: canceled
+      at Interface.<anonymous> (/usr/share/yarn/lib/cli.js:137008:13)
+      at Interface.emit (events.js:198:13)
+      at Interface._ttyWrite (readline.js:801:16)
+      at ReadStream.onkeypress (readline.js:184:10)
+      at ReadStream.emit (events.js:198:13)
+      at emitKeys (internal/readline.js:424:14)
+      at emitKeys.next (<anonymous>)
+      at ReadStream.onData (readline.js:1073:36)
+      at ReadStream.emit (events.js:198:13)
+      at addChunk (_stream_readable.js:288:12)
 
 npm manifest: 
   {
     "name": "keygenerator",
-    "version": "1.1.0",
+    "version": "1.1.2",
     "main": "./dist/index.js",
     "scripts": {
       "start": "ts-node-dev --respawn index.ts",
@@ -37,7 +37,7 @@ npm manifest:
       "preserve": "yarn tsc",
       "serve": "node dist/index.js"
     },
-    "author": "",
+    "author": "Nipu Chakraborty",
     "license": "ISC",
     "dependencies": {
       "@types/node": "^14.0.23",
@@ -47,16 +47,17 @@ npm manifest:
     "devDependencies": {},
     "repository": {
       "type": "git",
-      "url": "git+https://github.com/Nondukishor/-keygenerator.git"
+      "url": "git+https://github.com/Nondukishor/keygen.git"
     },
-    "bugs": {
-      "url": "https://github.com/Nondukishor/-keygenerator/issues"
-    },
-    "homepage": "https://github.com/Nondukishor/-keygenerator#readme",
-    "description": "",
     "publishConfig": {
       "registry": "https://npm.pkg.github.com/"
-    }
+    },
+    "keywords": [],
+    "bugs": {
+      "url": "https://github.com/Nondukishor/keygen/issues"
+    },
+    "homepage": "https://github.com/Nondukishor/keygen#readme",
+    "description": ""
   }
 
 yarn manifest: 

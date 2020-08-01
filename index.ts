@@ -3,7 +3,6 @@ import {IKeyGenerator, OTP_TYPE} from './IKeyGenerator';
 export default class KeyGenerator implements IKeyGenerator{
  
     encode(str: string): string {
-      
         if(str) return Buffer.from(str.toLocaleLowerCase(), 'binary').toString('base64')
         throw new Error("Method not implemented.");
     }

@@ -1,6 +1,6 @@
 {
-  "name": "keygenerator",
-  "version": "1.1.0",
+  "name": "keygen",
+  "version": "1.1.2",
   "main": "./dist/index.js",
   "scripts": {
     "start": "ts-node-dev --respawn index.ts",
@@ -19,6 +19,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Nondukishor/keygen.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   },
   "keywords": [],
   "bugs": {
